@@ -21,7 +21,6 @@ steps:
   displayName: 'npm install and build'
 - script: npm install -g mocha
 
-- script: mocha test --reporter mocha-junit-reporter
 - script: npm test
 
 - task: PublishTestResults@2
