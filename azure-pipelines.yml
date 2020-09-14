@@ -19,7 +19,8 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
-
+- script: npm install -g @mocha
+- script: npx mocha
 - script: mocha test --reporter mocha-junit-reporter
 - script: npm test
 
